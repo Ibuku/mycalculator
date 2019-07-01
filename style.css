@@ -1,6 +1,45 @@
 body{
-    width:50%;
-    height: 50%;
-    background: peru;
+    width: 275px;
+    height: 425px;
+    margin:50px 100px 0px 150px;
+    font-size: large;
+    border: 7px solid brown; 
+    border-radius: 7px;
+
     
+    }
+#ans{
+    background:rgb(209, 196, 196);
+    height:30px;
+    width: 273px;
+    
+    cursor:pointer;
+}
+
+.num{
+ background: peru;
+ width: 265px;
+ padding-right:10px;
+ 
+
+
+}
+table,tr,td{
+    color:black;
+    padding: 20px 10px;
+    
+    border:  rgba(238, 238, 238, 0.719);
+    border-top-color: orange;
+    box-sizing: content-box;
+    }
+button{
+    color: black;
+    background-color: orange;
+    border-radius: 5px;
+    border:1px orange;
+    padding: 15px 15px;
+    
+}
+button:hover{
+color:white;
 }

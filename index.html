@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-    <title>Calculator</title>
-    <link rel='stylesheet' href="app2/style.css">
+         <title>Calculator</title>
+    <link rel="stylesheet" href = "style.css">
+    <script src="script.js"></script>
+     
     </head>
     <body>
-        <form>
-            <input type="text" placeholder="0"\>
-            </form>
-        <table>
+      <div class = "calculator">
+     <form>   
+    <input id= "ans" name="textview"  placeholder="0"/>
+    </form>
+         <div class ="num">   
+         <table>   
         <tr>
-          <td>0</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>  
+         <td> <button id="number" value="0" onclick="zero()" >0</button></td>
+          <td><button id="number" value="1" onclick="one()">1</button></td>
+          <td><button id="number" value="2" onclick="two()">2</button></td>
+          <td><button id="number" value="3" onclick="three()">3</button></td>  
         </tr>
         <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>  
+                <td><button id="number" name="4" value="4" onclick="four()">4</button></td>
+                <td><button id="number" name="5" value="5" onclick="five()">5</button></td>
+                <td><button id="number" name="6" value="6" onclick="six()">6</button></td>
+                <td><button id="number" name="7" value="7" onclick="seven()">7</button></td>  
               </tr>
               <tr>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>*</td>
-                    <td>/</td>  
+                    <td><button id="number" name="8" value="8" onclick="eight()">8</button></td>
+                    <td><button id="number" name="9" value="9" onclick="nine()">9</button></td>
+                    <td><button id="operator" value="multiply" onclick="multiply()">*</button></td>
+                    <td><button id="operator" value="divide" onclick = "division()">/</button></td>  
                   </tr>
                   <tr>
-                        <td>+</td>
-                        <td>=</td>
-                        <td> -</td>
-                        <td>%</td>  
-                      </tr>
+                        <td><button class="operator" value="add" onclick = "addition()">+</button></td>
+                        <td> <button class="operator" value="minus" onclick =" minus()">-</button></td>
+                      <td><button class="equal" value="equal" onclick="equal()">=</button></td>
+                    <td><button class= "clear" value="C" onclick="C()">C</button></td>
+                  </tr>
+                </div>
                       </table>
-                 
-             
-         
+                 </div>
+            
+      </div>
     </body>
+    <script src="script.js"></script>
     </html>
